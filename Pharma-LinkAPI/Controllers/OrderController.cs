@@ -14,7 +14,7 @@ namespace Pharma_LinkAPI.Controllers
     {
         private readonly IOrderRepositry _orderRepositry;
         private readonly IUnitOfWork _unitOfWork;
-        public OrderController(IUnitOfWork unitOfWork, IOrderRepositry orderRepositry, AppDbContext context)
+        public OrderController(IUnitOfWork unitOfWork, IOrderRepositry orderRepositry)
         {
             _unitOfWork = unitOfWork;
             _orderRepositry = orderRepositry;
